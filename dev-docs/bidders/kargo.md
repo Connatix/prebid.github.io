@@ -17,7 +17,7 @@ deals_supported: true
 floors_supported: true
 fpd_supported: false
 pbs: true
-pbs_app_supported: false
+pbs_app_supported: true
 prebid_member: true
 gpp_supported: true
 multiformat_supported: will-bid-on-any
@@ -32,6 +32,8 @@ Kargo is an invitation-only marketplace.  Please reach out to your Kargo account
 ### Bidder Settings
 
 The Kargo bid adapter uses browser local storage. Since Prebid.js 7.x, the access to it must be explicitly set.
+
+{% include dev-docs/storageAllowed.md %}
 
 ```js
 // https://docs.prebid.org/dev-docs/publisher-api-reference/bidderSettings.html
